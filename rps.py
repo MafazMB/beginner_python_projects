@@ -11,29 +11,16 @@ while (u==c):
         print("Same choice, pick again")
     if (u!=c):
         break
-if u=="rock" and c=="paper":
+if u=="rock" and c=="paper" or u=="paper" and c=="scissor" or u=="scissor" and c=="rock":
     print("Your choice: ", u)
     print("Computer's choice: ", c)
-    print("paper beats rock, you lose")
-elif u=="paper" and c=="scissor":
+    print(c," beats",u,", you lose")
+
+
+elif u=="rock" and  c=="scissor" or u=="paper" and c=="rock" or u=="scissor" and c=="paper":
     print("Your choice: ", u)
     print("Computer's choice: ", c)
-    print("scissor beats paper, you lose")
-elif u=="scissor" and c=="rock":
-    print("Your choice: ", u)
-    print("Computer's choice: ", c)
-    print("rock beats scissor, you lose")
-elif u=="rock" and  c=="scissor":
-    print("Your choice: ", u)
-    print("Computer's choice: ", c)
-    print("rock beats scissor, you win ")
-elif u=="paper" and c=="rock":
-    print("Your choice: ", u)
-    print("Computer's choice: ", c)
-    print("paper beats rock, you win")
-elif u=="scissor" and c=="paper":
-    print("Your choice: ", u)
-    print("Computer's choice: ", c)
-    print("scissor beats paper, you win")
+    print(u,"beats",c,",you win ")
+
 else:
     print("Wrong choice")
