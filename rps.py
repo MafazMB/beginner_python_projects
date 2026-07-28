@@ -1,5 +1,5 @@
 import random
-import PIL
+
 list =["rock","paper","scissor"]
 u=""
 c=""
